@@ -13,14 +13,14 @@ import wave from "../../public/images/wave.png";
 export default function Home() {
   return (
     <main style={{ overflow: "hidden" }}>
-      <div className="flex flex-col-reverse mx-auto w-[90%] md:flex-row p-3 md:p-0 md:items-center justify-between gap-4 md:gap-10 relative">
+      <div className="flex flex-col-reverse mx-auto w-[90%] md:flex-row md:items-center justify-between gap-4 md:gap-10 relative">
         <motion.div
           animate={{ x: 0, opacity: 1 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="p-4 md:w-2/3 lg:w-2/5 mx-auto grid grid-cols-1 gap-6"
         >
-          <h1 className="text-[2.5rem]">
+          <h1 className="text-[3rem] md:text-[2.5rem]">
             The Journey to Wealth Starts with you!
           </h1>
 
@@ -71,7 +71,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -100 }}
               transition={{ delay: 0.5, duration: 1 }}
               viewport={{ once: true }}
-              className="p-4 grid grid-cols-1 gap-2 md:gap-4 mx-auto lg:pb-8"
+              className="p-2 md:p-4 grid grid-cols-1 gap-3 md:gap-4 mx-auto lg:pb-8"
             >
               <h1 className="text-3xl md:text-4xl font-bold">
                 Your win is our greatest achievement

@@ -87,7 +87,7 @@ const page = () => {
           Our Team
         </h4>
 
-        <div className="grid grid-cols-1 gap-8 md:gap-0 md:rounded-xl items-stretch md:grid-cols-3 w-11/12 mx-auto">
+        <div className="grid grid-cols-1 gap-28 md:gap-0 md:rounded-xl items-stretch md:grid-cols-3 w-11/12 mx-auto">
           {teamDetails.map((member) => {
             return (
               <div key={member.name} className="relative flex-1">
@@ -96,7 +96,7 @@ const page = () => {
                   src={member.image}
                   alt={member.name}
                 />
-                <div className="w-fit absolute text-left bg-black opacity-80 mx-auto px-4 bottom-0 left-0 right-0 text-white">
+                <div className="text-left bg-black opacity-80 mx-auto px-4 text-white">
                   <p className="text-2xl">{member.name}</p>
                   <p className="italics">{member.title}</p>
                 </div>
@@ -105,6 +105,7 @@ const page = () => {
           })}
         </div>
       </section>
+      <Space />
     </div>
   );
 };
