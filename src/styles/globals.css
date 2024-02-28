@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root{
+        --backgrounds: #606060;
+        --titles: #AD8330
+    }
+    h1,h2,h3,h4,h5,h6{
+      font-family: "Akaya Kanadaka", system-ui;
+    }
+    html {
+        font-family: "Onest", sans-serif;
+    }
+  }
+  .schedule-pattern{
+    background-image: url("../../public/images/pattern_shape.svg");
+  }
+
+  @layer components {
+    * {
+      @apply motion-reduce:transition-none;
+    }
+  
+    html {
+      @apply scroll-smooth;
+    }
+  
+    ::-webkit-scrollbar {
+      @apply w-[10px];
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+      @apply bg-[#adadad];
+    }
+  
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      @apply bg-[#AD8330];
+    }
+  
+    .scroll-box span{
+      animation: scroll-down 3s infinite;
+    }
+    
+    /* Animate scroll icon */
+    @keyframes scroll-down{
+      0%{
+        transform: translateY(-1rem);
+        opacity: 0;
+      }
+      50%{
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100%{
+        transform: translateY(.6rem);
+        opacity: 0;
+      }
+    }
+ 
+  }
