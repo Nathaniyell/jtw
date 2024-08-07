@@ -87,7 +87,7 @@ const page = () => {
           Our Team
         </h4>
 
-        <div className="grid grid-cols-1 gap-28 md:gap-0 md:rounded-xl items-stretch md:grid-cols-3 w-11/12 mx-auto">
+        <div className="grid grid-cols-1 gap-24 md:gap-0 md:rounded-xl items-stretch md:grid-cols-3 w-11/12 mx-auto">
           {teamDetails.map((member) => {
             return (
               <div key={member.name} className="relative flex-1">
